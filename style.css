@@ -1,138 +1,73 @@
-html, body, #cadre
+*
 {
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    box-sizing: border-box;
+    font-family: "roboto";
+    color: hsl(240, 40%, 15%);
 }
-body
+html, body, .cadre
 {
-    background-color: rgb(25, 31, 89);
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-#header
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     width: 100%;
-    height: 20%;
-    background-color: rgb(4, 17, 43);
+    height: 100%;
+    background-color: hsl(240, 20%, 96%);
 }
-h1, h3
+.header
 {
-    text-align: center;
-    margin: auto;
-    padding: 0;
-    color: white;
-    font-family: roboto;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    padding: 15px;
+    align-items: center;
 }
-h1
+.profil-pic
 {
-    font-size: 9vh;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid white;
 }
-h3
+.pseudo
 {
-    font-size: 2vh;
+    margin-left: 15px;
+    font-size: 1.8em;
 }
-#content
+.content
 {
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 100%;
+    padding: 15px;
 }
-#fleche
+.title, .title2
 {
-    display: block;
-    width: 12%;
-    height: 12%;
-    margin: auto;
-    margin-top: -1px;
+    font-size: 1.5em;
+}
+.title2
+{
+    margin-top: 20px;
 }
 .link
 {
     width: 100%;
-    height: 300px;
-    background-color: rgb(4, 17, 43);
-    margin-top: 5%;
-    border-radius: 50px;
+    height: 110px;
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 15px;
+    -webkit-tap-highlight-color: transparent;
+    transition: all 0.15s;
 }
-.link:active
+.link:hover
 {
-    background-color: rgb(2, 6, 49);
-}
-#lastLink
-{
-    margin-bottom: 5%;
+    background-color: rgba(255, 255, 255, 0.692);
 }
 a
 {
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
     width: 100%;
     height: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
 }
-#youtube
+a > img
 {
-    margin : auto;
-    width : 60%;
-    height: auto;
-}
-#soundcloud
-{
-    margin : auto;
-    width : 90%;
-    height: auto;
-}
-#twitter
-{
-    margin : auto;
-    width : 60%;
-    height: auto;
-}
-#instagram
-{
-    margin : auto;
-    width : 65%;
-    height: auto;
-}
-@media screen and (orientation : landscape)
-{
-    #header
-    {
-        height: 30%;
-    }
-    #content
-    {
-        width: 60%;
-        padding-left: 20%;
-        padding-right: 20%;
-    }
-    .link
-    {
-        height: 100px;
-        border-radius: 20px;
-    }
-    #youtube
-    {
-        width : 30%;
-        height: auto;
-    }
-    #soundcloud
-    {
-        width : 60%;
-        height: auto;
-    }
-    #twitter
-    {
-        width : 30%;
-        height: auto;
-    }
-    #instagram
-    {
-        width : 35%;
-        height: auto;
-    }
+    width: 100%;
 }
